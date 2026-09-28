@@ -1,0 +1,136 @@
+
+body{
+    background: radial-gradient(circle at 75% 35%, #134364 0%,  #0d2e46 50%, #091a27 100%);
+}
+body::after{
+    content: "X";
+    left: 5%;
+    top: 20%;
+    position: absolute;
+    font-size: 25rem;
+    font-weight: bold;
+    color:  rgba(255, 239, 239, 0.03);
+    pointer-events: none;
+    z-index: 0;
+    transform: rotate(-15deg);
+    
+}
+body::before{
+    content: "O";
+    right: 5%;
+    bottom: 10%;
+    position: absolute;
+    font-size: 20rem;
+    font-weight: bold;
+    color:  rgba(255, 239, 239, 0.03);
+    pointer-events: none;
+    z-index: 0;
+    transform: rotate(-15deg);
+    
+}
+#game{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 450px;
+    width: 450px;
+    margin-top: 75px;
+    background-color:  rgba(16, 40, 60, 0.4);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+   
+
+}
+#container{
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   
+    
+}
+#head{
+    font-size: 60px;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+.box{
+    height: 150px;
+    width: 150px;
+     justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    border: none;
+    background-color: transparent;
+    font-size: 50px;
+    color: aliceblue;
+    
+}
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(4),
+.box:nth-child(5),
+.box:nth-child(7),
+.box:nth-child(8){
+border-right: 2px solid rgb(139, 137, 137);
+}
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3),
+.box:nth-child(4),
+.box:nth-child(5),
+.box:nth-child(6){
+    border-bottom: 2px solid  rgb(139, 137, 137);
+}
+#reset{
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+     margin-top:75px ;
+    font-size: 20px;
+    font-style: italic;
+}
+main{
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    
+}
+#player-turn{
+    color: aliceblue;
+    font-size:40px ;
+    margin-top: 100px;
+     display: flex;
+    justify-content: center;
+    margin-top: 0%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#player{
+      color: aliceblue;
+    font-size:50px ;
+    margin-bottom: 0%;
+     display: flex;
+    justify-content: center;
+   
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.clicked{
+    background-color:#00f2fe;
+}
+.clicked2{
+    background-color:  #ff3366;
+}
+.winner{
+    background-color:  #ffcc00 !important;
+    color:  #091a27 !important;
+    box-shadow: 0 0 25px #ffcc00;
+     transform: scale(1.05);
+      transition: all 0.3s ease;
+}
